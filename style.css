@@ -219,6 +219,23 @@ td:nth-child(odd) {
     border: 10px solid #204a79;
 }
 
+.myfirstbox {
+    position: relative;
+    left: 10%;
+    top: 5vh;
+    width: 80%;
+    background: white;
+    padding: 2%;
+    border: 10px solid #204a79;
+}
+
+.myfirstbox h1 {
+    background: black;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
 .mybox h1 {
     background: black;
     color: white;
@@ -255,7 +272,6 @@ td:nth-child(odd) {
     border-bottom: 10px solid #204a79;
 }
 
-
 .myabout h1, .mystatic h1 {
     background: black;
     color: white;
@@ -274,6 +290,11 @@ td:nth-child(odd) {
 
 .source {
     font-size: 15px;
+}
+
+.footer {
+    width:100%;
+    height: 10vh;
 }
 
 #en {
