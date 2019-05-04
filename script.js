@@ -42,3 +42,17 @@ function init(){
     langue(thai,english);
 }
 init();
+
+function move() {
+  var elem = document.getElementById("myBar");
+  var width = 100;
+  var id = setInterval(frame, 75);
+  function frame() {
+    if (width <= 0) {
+      clearInterval(id);
+    } else {
+      width--;
+      elem.style.width = width + '%';
+    }
+  }
+}
