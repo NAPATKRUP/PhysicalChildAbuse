@@ -511,18 +511,22 @@ ul li {
     }
 
     #myProgress {
-        position: static;
+        position: fixed;
         width: 100%;
         background-color: grey;
         z-index: 1;
+        transform: translate(-50%, -50%);
+        margin: 0 auto;
     }
 
     #myBar {
-        position: static;
+        position: fixed;
         width: 1%;
         height: 5vh;
         background-color: green;
         z-index: 2;
+        transform: translate(-50%, -50%);
+        margin: 0 auto;
 
     }
 
