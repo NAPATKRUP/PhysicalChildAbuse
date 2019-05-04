@@ -351,7 +351,7 @@ ul li {
     transition: background-color .3s ease-in-out;
 }
 .button_lang:hover, .current_lang {
-    background-color: #777;   
+    background-color: #777;
     transition: background-color .3s ease-in-out;
 }
 
@@ -508,6 +508,22 @@ ul li {
 
     .nav > #nav-check:checked ~ .nav-links {
         height: 450px;
+    }
+
+    #myProgress {
+        position: static;
+        width: 100%;
+        background-color: grey;
+        z-index: 1;
+    }
+
+    #myBar {
+        position: static;
+        width: 1%;
+        height: 5vh;
+        background-color: green;
+        z-index: 2;
+
     }
 
 }
