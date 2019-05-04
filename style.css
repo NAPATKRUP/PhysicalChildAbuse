@@ -258,6 +258,17 @@ mark {
     text-align: center;
 }
 
+.smallbox {
+    border: 5px solid #204a79;
+}
+
+.smallbox h1 {
+    background: black;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+}
+
 .mycontent {
     font-size: 20px;
 }
