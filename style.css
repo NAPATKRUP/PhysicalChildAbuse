@@ -74,27 +74,6 @@ mark {
     background: black;
 }
 
-table, th, td {
-    border: 5px solid black;
-    border-collapse: collapse;
-}
-th, td {
-    width: 20%;
-    padding: 20px;
-    text-align: left;
-}
-
-th {
-    font-size: 20px;
-    background: #204a79;
-    color: white;
-}
-
-td:nth-child(odd) {
-    font-weight: bold;
-    background: #888888;
-}
-
 .title_1 {
     margin-top: -2vmax;
     margin-left: 1vmax;
@@ -213,7 +192,6 @@ td:nth-child(odd) {
     left: 10%;
     top: 5vh;
     width: 80%;
-    height: 70vh;
     background: white;
     padding: 2%;
     border: 10px solid #204a79;
@@ -243,17 +221,11 @@ td:nth-child(odd) {
     text-align: center;
 }
 
-.mybox p {
-    font-size: 2.5vmax;
-    text-align: center;
-}
-
 .myabout {
     position: relative;
     left: 10%;
     top: 5vh;
     width: 80%;
-    height: 70vh;
     background: white;
     padding: 2%;
     border-top: 10px solid #204a79;
@@ -263,14 +235,16 @@ td:nth-child(odd) {
 .mystatic {
     position: relative;
     left: 10%;
-    top: 5vh;
+    top: -1.5vh;
     width: 80%;
-    height: 70vh;
     background: white;
     padding: 2%;
-    border-top: 10px solid #204a79;
-    border-bottom: 10px solid #204a79;
 }
+
+.mystatic img {
+    width: 70%;
+}
+
 
 .myabout h1, .mystatic h1 {
     background: black;
@@ -281,6 +255,17 @@ td:nth-child(odd) {
 
 .myabout p {
     font-size: 2.5vmax;
+    text-align: center;
+}
+
+.smallbox {
+    border: 5px solid #204a79;
+}
+
+.smallbox h1 {
+    background: black;
+    color: white;
+    font-size: 24px;
     text-align: center;
 }
 
@@ -405,15 +390,6 @@ ul li {
         font-size: 55px;
     }
 
-    .mybox, .myabout {
-        top: 10vh;
-        height: 70%;
-    }
-
-    .myabout p, .mybox p {
-        font-size: 4vmin;
-    }
-
     .titleboxleft, .titleboxright, .titleboxnews, .titleboxvideo {
         display: block;
         position: relative;
@@ -440,6 +416,10 @@ ul li {
         left: 10%;
         top: 15vh;
         width: 80%;
+    }
+
+    .mystatic img {
+        width: 100%;
     }
 
     .videoshow a {
