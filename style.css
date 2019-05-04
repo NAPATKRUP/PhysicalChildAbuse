@@ -1,0 +1,492 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: white;
+    background-size: cover;
+    margin: 0px;
+    font-family: 'Prompt', sans-serif;
+}
+
+a {
+    font-size: 2.75vmin;
+}
+
+.scrollbar {
+    position: relative;
+    top: -4vh;
+    height: 91vh;
+    width: 100%;
+    background: white;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.force-overflow {
+    min-height: 450px;
+}
+
+#style-3::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+}
+
+#style-3::-webkit-scrollbar {
+    width: 6px;
+    background-color: #F5F5F5;
+}
+
+#style-3::-webkit-scrollbar-thumb {
+    background-color: #204a79;
+}
+
+#page1 {
+    background-image: url("./image/bg.png");
+    background-position: center;
+    background-size: cover;
+}
+
+#content {
+    width: 100%;
+    height: 100vh;
+    scroll-behavior: smooth;
+    overflow: hidden;
+    scroll-snap-type: y mandatory;
+}
+
+.section {
+    display: inline-block;
+    width: 100%;
+    height: 100vh;
+    padding-top: 13vh;
+    padding-left: 3%;
+    scroll-snap-align: start;
+    animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+mark {
+    background: black;
+}
+
+table, th, td {
+    border: 5px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    width: 20%;
+    padding: 20px;
+    text-align: left;
+}
+
+th {
+    font-size: 20px;
+    background: #204a79;
+    color: white;
+}
+
+td:nth-child(odd) {
+    font-weight: bold;
+    background: #888888;
+}
+
+.title_1 {
+    margin-top: -2vmax;
+    margin-left: 1vmax;
+    margin-bottom: 5vmax;
+    width: 95%;
+    height: 85vh;
+}
+
+.title_1 h1 {
+    padding-left: 20vmax;
+    color: white;
+    font-size: 7vmax;
+    margin: 0;
+}
+
+.titleboxleft {
+    position: relative;
+    top: 10vh;
+    left: 10%;
+    background: black;
+    color: white;
+    width: 40%;
+    font-size: 18px;
+    border-bottom: 10px solid #204a79;
+}
+
+.titleboxright {
+    position: relative;
+    top: 10vh;
+    left: 50%;
+    background: black;
+    color: white;
+    width: 40%;
+    font-size: 18px;
+    border-bottom: 10px solid #204a79;
+}
+
+.titleboxnews {
+    position: relative;
+    top: -66.5vh;
+    left: 10%;
+    background: black;
+    color: white;
+    width: 35%;
+    font-size: 18px;
+    border-bottom: 10px solid #204a79;
+}
+
+.contentboxnews {
+    position: relative;
+    top: -65vh;
+    left: 8%;
+    background: white;
+    padding: 3%;
+    width: 35%;
+    font-size: 25px;
+}
+
+.titleboxvideo {
+    position: relative;
+    top: 10vh;
+    left: 50%;
+    background: black;
+    color: white;
+    width: 40%;
+    font-size: 18px;
+    border-bottom: 10px solid #204a79;
+}
+
+.contentboxleft {
+    position: relative;
+    top: -35vh;
+    left: 10%;
+    background: white;
+    padding: 3%;
+    width: 40%;
+    font-size: 25px;
+}
+
+.contentboxright {
+    position: relative;
+    top: -35vh;
+    left: 50%;
+    background: white;
+    padding: 3%;
+    width: 40%;
+    font-size: 25px;
+}
+
+.contentboxstack {
+    position: relative;
+    left: 10%;
+    top: -40vh;
+    background: white;
+    padding: 3%;
+    width: 40%;
+    font-size: 25px;
+}
+
+.imgleft {
+    position: relative;
+    left: 10%;
+    top: 20vh;
+    width: 40%;
+}
+
+.imgright {
+    position: relative;
+    left: 50%;
+    top: 20vh;
+    width: 40%;
+}
+
+.mybox {
+    position: relative;
+    left: 10%;
+    top: 5vh;
+    width: 80%;
+    height: 70vh;
+    background: white;
+    padding: 2%;
+    border: 10px solid #204a79;
+}
+
+.mybox h1 {
+    background: black;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+.mybox p {
+    font-size: 2.5vmax;
+    text-align: center;
+}
+
+.myabout {
+    position: relative;
+    left: 10%;
+    top: 5vh;
+    width: 80%;
+    height: 70vh;
+    background: white;
+    padding: 2%;
+    border-top: 10px solid #204a79;
+    border-bottom: 10px solid #204a79;
+}
+
+.mystatic {
+    position: relative;
+    left: 10%;
+    top: 5vh;
+    width: 80%;
+    height: 70vh;
+    background: white;
+    padding: 2%;
+    border-top: 10px solid #204a79;
+    border-bottom: 10px solid #204a79;
+}
+
+
+.myabout h1, .mystatic h1 {
+    background: black;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+.myabout p {
+    font-size: 2.5vmax;
+    text-align: center;
+}
+
+.mycontent {
+    font-size: 20px;
+}
+
+.source {
+    font-size: 15px;
+}
+
+#en {
+    display: none;
+}
+
+#th {
+    display: block;
+}
+
+ul li {
+    width: auto;
+    display: inline;
+}
+
+.social {
+    position: fixed;
+    right: 2%;
+    bottom: 2vh;
+    z-index: 1;
+}
+
+.button {
+    padding: 20px 40px;
+    border-color: #f3f3f3;
+    font-size: 17px;
+    font-size: 1.7rem;
+    font-weight: 500;
+    margin-top: 40px;
+    display: block;
+    position: relative;
+    width: 40%;
+    left: 50%;
+}
+
+.button {
+    border: 5px solid #204a79;
+    color: #204a79;
+    background: rgba(0,0,0,0.7);
+    text-transform: uppercase;
+    transition: all 0.15s ease-in-out;
+}
+
+.button:hover {
+    background-color: rgba(255,255,255,0.7);
+}
+
+
+.button_lang {
+    background-color: #444;
+    color: #FFF;
+    padding: 8px 20px;
+    border-radius: 5px;
+    transition: background-color .3s ease-in-out;
+}
+.button_lang:hover, .current_lang {
+    background-color: #777;   
+    transition: background-color .3s ease-in-out;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    height: 70px;
+    width: 100%;
+    z-index: 1;
+    background: black;
+}
+
+.nav > .nav-header {
+    display: inline;
+}
+
+.nav > .nav-btn {
+    display: none;
+}
+
+.nav > .nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+}
+
+.nav > .nav-links > a {
+    display: inline-block;
+    padding: 20px 70px 1px 40px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.nav > #nav-check {
+    display: none;
+}
+
+@media (max-width:1400px) {
+    a {
+        font-size: 12px;
+    }
+
+    .title_1 {
+        margin-top: -5vmax;
+    }
+
+    .title_1 h1 {
+        padding-left: 1vmax;
+        font-size: 55px;
+    }
+
+    .mybox, .myabout {
+        top: 10vh;
+        height: 70%;
+    }
+
+    .myabout p, .mybox p {
+        font-size: 4vmin;
+    }
+
+    .titleboxleft, .titleboxright, .titleboxnews, .titleboxvideo {
+        display: block;
+        position: relative;
+        left: 10%;
+        top: 10vh;
+        width: 80%;
+    }
+
+    .contentboxleft, .contentboxright, .contentboxnews, .contentboxstack {
+        display: block;
+        position: relative;
+        left: 10%;
+        top: 15vh;
+        width: 80%;
+    }
+
+    .contentboxnews {
+        top: 10vh;
+    }
+
+    .imgleft, .imgright {
+        display: block;
+        position: relative;
+        left: 10%;
+        top: 15vh;
+        width: 80%;
+    }
+
+    .videoshow a {
+        width: 80%;
+        left: 10%;
+        top: -25vmin;
+    }
+
+    .button_lang {
+        padding: 2px 2px;
+    }
+
+    ul li {
+        display: block;
+        margin: 10px;
+    }
+
+    .nav > .nav-links > a {
+        display: inline-block;
+        padding: 20px 60px 1px 70px;
+        font-weight: bold;
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+    }
+
+    .nav > .nav-btn {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+
+    .nav > .nav-btn > label {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding-top: 25px;
+    }
+
+    .nav > .nav-btn > label > span {
+        display: block;
+        width: 25px;
+        height: 13px;
+        border-top: 5px solid #eee;
+    }
+
+    .nav > .nav-links {
+        position: absolute;
+        display: block;
+        width: 100%;
+        background-color: black;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        top: 70px;
+    }
+
+    .nav > .nav-links > a {
+        display: block;
+        width: 100%;
+    }
+
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+        height: 0px;
+    }
+
+    .nav > #nav-check:checked ~ .nav-links {
+        height: 450px;
+    }
+
+}
