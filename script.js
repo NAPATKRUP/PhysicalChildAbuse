@@ -43,13 +43,15 @@ function init(){
 }
 init();
 
-function move() {
+function move(){
+  var scene = document.getElementById("page7");
   var elem = document.getElementById("myBar");
   var width = 100;
   var id = setInterval(frame, 75);
   function frame() {
     if (width <= 0) {
       clearInterval(id);
+      scene.style.backgroundImage = 'url("./image/placeholder_c.png")';
     } else {
       width--;
       elem.style.width = width + '%';

@@ -48,8 +48,10 @@ a {
 }
 
 #page7 {
+    animation: fadein 2s;
+    padding-top: 6vh;
     padding-left: 0%;
-    background-image: url("./image/bg.png");
+    background-image: url("./image/placeholder_a.png");
     background-position: center;
     background-size: cover;
 }
@@ -385,9 +387,10 @@ ul li {
 
 #myProgress {
     position: relative;
-    width: 80vw;
+    width: 100vw;
     background-color: grey;
     left: 50%;
+    top: 1vh;
     transform: translatex(-50%);
     /* transform: translate(-50%, -50%);
     margin: 0 auto; */
@@ -395,15 +398,22 @@ ul li {
 
 #myBar {
     position: relative;
-    width: 80vw;
-    height: 5vh;
-    background-color: green;
-    bottom: 50%;
+    width: 100vw;
+    height: 1vh;
+    background-color: white;
     left: 50%;
     transform: translatex(-50%);
     /* transform: translate(-50%, -50%);
     margin: 0 auto; */
 }
+
+.testbox {
+  display: box;
+  background: white;
+  width: 5vh;
+  height: 2vh;
+}
+
 
 @media (max-width:1400px) {
     a {
