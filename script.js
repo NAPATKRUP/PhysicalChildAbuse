@@ -43,16 +43,44 @@ function init(){
 }
 init();
 
-function move(){
+var clickgame = 0;  /* set game*/
+function clickchoiceone(){     /* choice one*/
+var scene = document.getElementById("page7");
+scene.style.backgroundImage = 'url("./image/placeholder_b.png")';
+clickgame++;
+}
+
+function clickchoicetwo(){ /* choice two*/
+var scene = document.getElementById("page7");
+scene.style.backgroundImage = 'url("./image/placeholder_c.png")';
+clickgame++;
+}
+
+function move(){  /*  start game */
   var scene = document.getElementById("page7");
   var elem = document.getElementById("myBar");
+  var boxc1 = document.getElementById("choicebox1");
+  var boxc2 = document.getElementById("choicebox2");
   var width = 100;
   var id = setInterval(frame, 75);
+  boxc1.style.width = "50vh";
+  boxc2.style.width = width + '%';
+  clickgame = 0;
+  document.getElementById("start").innerHTML = "";
   function frame() {
     if (width <= 0) {
       clearInterval(id);
-      scene.style.backgroundImage = 'url("./image/placeholder_c.png")';
-    } else {
+      scene.style.backgroundImage = 'url("./image/placeholder_d.png")';
+      boxc1.style.width = "0vh";
+      boxc2.style.width = "0vh";
+      document.getElementById("start").innerHTML = "Continue";
+    } 
+    else if (clickgame != 0) {
+      boxc1.style.width = "0vh";
+      boxc2.style.width = "0vh";
+      document.getElementById("start").innerHTML = "Continue";
+    }
+    else {
       width--;
       elem.style.width = width + '%';
     }

@@ -386,38 +386,59 @@ ul li {
 }
 
 #myProgress {
-    position: relative;
+    position: relative;/*         game timebox grey     */
     width: 100vw;
     background-color: grey;
     left: 50%;
-    top: 1vh;
+    top: 25.5px;
     transform: translatex(-50%);
     /* transform: translate(-50%, -50%);
     margin: 0 auto; */
 }
 
 #myBar {
-    position: relative;
+    position: relative;  /*       game timebox   white */
     width: 100vw;
     height: 1vh;
     background-color: white;
     left: 50%;
+    
     transform: translatex(-50%);
     /* transform: translate(-50%, -50%);
     margin: 0 auto; */
 }
 
-.testbox {
+.testbox {       /*         txt box start     */ 
   display: box;
-  background: white;
-  width: 5vh;
-  height: 2vh;
+  text-align:center;
+  /*background: white;*/
+  position: relative;
+  top: 45vh;
+  width: 50vh;
+  height: 20vh;
 }
-
-
+.testbox:hover{ /*       onmouse txt box start     */ 
+    color:red;
+}
+#choicebox1 {           /*choicebox 1*/
+  background-color: white;
+  position: relative;
+  top: 50%;
+  left: 15%;
+  width: 0vh;
+  height: 20vh;
+}
+#choicebox2 {           /*choicebox 2*/
+  background-color: red;
+  position: relative;
+  top: 0%;
+  left: 200%;
+  width: 0vh;
+  height: 20vh;
+}
 @media (max-width:1400px) {
     a {
-        font-size: 12px;
+        font-size: 40px;
     }
 
     .title_1 {
