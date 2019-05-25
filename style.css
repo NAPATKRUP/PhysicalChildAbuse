@@ -83,6 +83,19 @@ mark {
     background: black;
 }
 
+.help {
+    position: fixed;
+    bottom: 2vh;
+    margin: 5px;
+    background: black;
+    color: white;
+    z-index: 1;
+}
+
+.help p {
+    margin: 10px;
+}
+
 .title_1 {
     margin-top: -2vmax;
     margin-left: 1vmax;
