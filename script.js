@@ -74,8 +74,9 @@ function move(){  /*  start game */
       boxc1.style.width = "0vh";
       boxc2.style.width = "0vh";
       document.getElementById("start").innerHTML = "Continue";
-    } 
+    }
     else if (clickgame != 0) {
+      clearInterval(id);
       boxc1.style.width = "0vh";
       boxc2.style.width = "0vh";
       document.getElementById("start").innerHTML = "Continue";
