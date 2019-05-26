@@ -442,19 +442,20 @@ ul li {
 }
 #choicebox1 {           /*choicebox 1*/
   background-color: white;
-  position: relative;
-  top: 50%;
+  position: absolute;
+  top: 75%;
   left: 15%;
   width: 0vh;
-  height: 20vh;
+  height: 10vh;
 }
 #choicebox2 {           /*choicebox 2*/
   background-color: red;
-  position: relative;
-  top: 0%;
-  left: 200%;
+  position: absolute;
+  top: 75%;
+  right: 5%;
+  left: 65%;
   width: 0vh;
-  height: 20vh;
+  height: 10vh;
 }
 @media (max-width:1400px) {
     a {
