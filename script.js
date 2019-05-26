@@ -66,22 +66,20 @@ function move(){  /*  start game */
   scene.style.backgroundImage = 'url("./image/one.png")';
   boxc1.style.display = "block";
   boxc2.style.display = "block";
-  boxc1.style.width = "20%";
-  boxc2.style.width = "20%";
   clickgame = 0;
   document.getElementById("start").innerHTML = "";
   function frame() {
     if (width <= 0) {
       clearInterval(id);
       scene.style.backgroundImage = 'url("./image/end.png")';
-      boxc1.style.width = "0%";
-      boxc2.style.width = "0%";
+      boxc1.style.display = "none";
+      boxc2.style.display = "none";
       document.getElementById("start").innerHTML = "Continue";
     }
     else if (clickgame != 0) {
       clearInterval(id);
-      boxc1.style.width = "0%";
-      boxc2.style.width = "0%";
+      boxc1.style.display = "none";
+      boxc2.style.display = "none";
       document.getElementById("start").innerHTML = "Continue";
     }
     else {
