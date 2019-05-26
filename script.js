@@ -64,22 +64,24 @@ function move(){  /*  start game */
   var width = 100;
   var id = setInterval(frame, 75);
   scene.style.backgroundImage = 'url("./image/one.png")';
-  boxc1.style.width = "50vh";
-  boxc2.style.width = width + '%';
+  boxc1.style.display = "block";
+  boxc2.style.display = "block";
+  boxc1.style.width = "20%";
+  boxc2.style.width = "20%";
   clickgame = 0;
   document.getElementById("start").innerHTML = "";
   function frame() {
     if (width <= 0) {
       clearInterval(id);
       scene.style.backgroundImage = 'url("./image/end.png")';
-      boxc1.style.width = "0vh";
-      boxc2.style.width = "0vh";
+      boxc1.style.width = "0%";
+      boxc2.style.width = "0%";
       document.getElementById("start").innerHTML = "Continue";
     }
     else if (clickgame != 0) {
       clearInterval(id);
-      boxc1.style.width = "0vh";
-      boxc2.style.width = "0vh";
+      boxc1.style.width = "0%";
+      boxc2.style.width = "0%";
       document.getElementById("start").innerHTML = "Continue";
     }
     else {

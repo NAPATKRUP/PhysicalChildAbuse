@@ -428,37 +428,41 @@ ul li {
 }
 
 .testbox {       /*         txt box start     */
-  display: box;
-  text-align:center;
-  /*background: white;*/
-  position: relative;
-  top: 45vh;
-  width: 50vh;
-  height: 20vh;
-  color: white;
+    display: box;
+    text-align:center;
+    /*background: white;*/
+    position: relative;
+    top: 45vh;
+    width: 50vh;
+    height: 20vh;
+    color: white;
+    font-size: 3.5vmax;
 }
+
 .testbox:hover{ /*       onmouse txt box start     */
     color:red;
 }
+
 #choicebox1 {           /*choicebox 1*/
-  background-color: white;
-  position: absolute;
-  top: 75%;
-  left: 15%;
-  width: 0vh;
-  height: 10vh;
+    display: none;
+    background-color: white;
+    position: relative;
+    top: 70vh;
+    left: 15%;
+    width: 20%;
+    height: 10vh;
 }
+
 #choicebox2 {           /*choicebox 2*/
-  background-color: red;
-
-  position: absolute;
-  top: 75%;
-  right: 5%;
-  left: 65%;
-
-  width: 0vh;
-  height: 10vh;
+    display: none;
+    background-color: red;
+    position: relative;
+    top: 60vh;
+    left: 65%;
+    width: 20%;
+    height: 10vh;
 }
+
 @media (max-width:1400px) {
     a {
         font-size: 40px;
@@ -470,7 +474,7 @@ ul li {
 
     .title_1 h1 {
         padding-left: 1vmax;
-        font-size: 55px;
+        font-size: 7.5vmax;
     }
 
     .titleboxleft, .titleboxright, .titleboxnews, .titleboxvideo {
@@ -573,5 +577,8 @@ ul li {
         height: 450px;
     }
 
+    .social {
+        bottom: 7vh;
+    }
 
 }
