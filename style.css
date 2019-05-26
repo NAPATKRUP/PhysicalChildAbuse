@@ -55,6 +55,7 @@ a {
     background-image: url("./image/placeholder_black.png");
     background-position: center;
     background-size: cover;
+    overflow: hidden;
 
     -webkit-transition: background 300ms ease-in 200ms; /* property duration timing-function delay */
     -moz-transition: background 300ms ease-in 200ms;
