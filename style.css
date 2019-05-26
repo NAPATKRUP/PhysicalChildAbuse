@@ -434,7 +434,7 @@ ul li {
     display: box;
     text-align:center;
     position: relative;
-    top: 60vh;
+    top: 50vh;
     width: 50vh;
     height: 20vh;
     font-size: 3.5vmax;
@@ -453,7 +453,7 @@ ul li {
     color: white;
     background-color: black;
     position: relative;
-    top: 65vh;
+    top: 55vh;
     left: 15%;
     width: 20%;
     height: 10vh;
@@ -472,7 +472,7 @@ ul li {
     color: white;
     background-color: black;
     position: relative;
-    top: 55vh;
+    top: 45vh;
     left: 65%;
     width: 20%;
     height: 10vh;
