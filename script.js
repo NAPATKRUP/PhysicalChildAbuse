@@ -45,15 +45,25 @@ init();
 
 var clickgame = 0;  /* set game*/
 function clickchoiceone(){     /* choice one*/
-var scene = document.getElementById("page7");
-scene.style.backgroundImage = 'url("./image/two.png")';
+    var scene = document.getElementById("page7");
+    scene.style.backgroundImage = 'url("./image/two.png")';
+    status1.style.display = "none";
+    status2.style.display = "none";
+    status3.style.display = "block";
+    status4.style.display = "none";
+    status5.style.display = "none";
 clickgame++;
 }
 
 function clickchoicetwo(){ /* choice two*/
-var scene = document.getElementById("page7");
-scene.style.backgroundImage = 'url("./image/three.png")';
-clickgame++;
+    var scene = document.getElementById("page7");
+    scene.style.backgroundImage = 'url("./image/three.png")';
+    status1.style.display = "none";
+    status2.style.display = "none";
+    status3.style.display = "none";
+    status4.style.display = "block";
+    status5.style.display = "none";
+    clickgame++;
 }
 
 function move(){  /*  start game */
@@ -61,11 +71,21 @@ function move(){  /*  start game */
   var elem = document.getElementById("myBar");
   var boxc1 = document.getElementById("choicebox1");
   var boxc2 = document.getElementById("choicebox2");
+  var status1 = document.getElementById("status1");
+  var status2 = document.getElementById("status2");
+  var status3 = document.getElementById("status3");
+  var status4 = document.getElementById("status4");
+  var status5 = document.getElementById("status5");
   var width = 100;
   var id = setInterval(frame, 75);
   scene.style.backgroundImage = 'url("./image/one.png")';
   boxc1.style.display = "block";
   boxc2.style.display = "block";
+  status1.style.display = "none";
+  status2.style.display = "block";
+  status3.style.display = "none";
+  status4.style.display = "none";
+  status5.style.display = "none";
   clickgame = 0;
   document.getElementById("start").innerHTML = "";
   function frame() {
@@ -74,6 +94,11 @@ function move(){  /*  start game */
       scene.style.backgroundImage = 'url("./image/end.png")';
       boxc1.style.display = "none";
       boxc2.style.display = "none";
+      status1.style.display = "none";
+      status2.style.display = "none";
+      status3.style.display = "none";
+      status4.style.display = "none";
+      status5.style.display = "block";
       document.getElementById("start").innerHTML = "Continue";
     }
     else if (clickgame != 0) {

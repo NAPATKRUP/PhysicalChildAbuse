@@ -434,7 +434,7 @@ ul li {
     display: box;
     text-align:center;
     position: relative;
-    top: 75vh;
+    top: 60vh;
     width: 50vh;
     height: 20vh;
     font-size: 3.5vmax;
@@ -448,12 +448,12 @@ ul li {
 
 #choicebox1 {           /*choicebox 1*/
     text-align: center;
-    font-size: 4vmax;
+    font-size: 3.5vmax;
     display: none;
     color: white;
     background-color: black;
     position: relative;
-    top: 70vh;
+    top: 65vh;
     left: 15%;
     width: 20%;
     height: 10vh;
@@ -467,12 +467,12 @@ ul li {
 
 #choicebox2 {           /*choicebox 2*/
     text-align: center;
-    font-size: 4vmax;
+    font-size: 3.5vmax;
     display: none;
     color: white;
     background-color: black;
     position: relative;
-    top: 60vh;
+    top: 55vh;
     left: 65%;
     width: 20%;
     height: 10vh;
@@ -483,6 +483,21 @@ ul li {
     color: black;
     background-color: white;
     transition: color 1s,background-color 1s;
+}
+
+#status1, #status2, #status3, #status4, #status5 {
+    position: relative;
+    top: 5vh;
+    left: 10%;
+    width: 80%;
+    background: black;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+#status2, #status3, #status4, #status5 {
+    display: none;
 }
 
 @media (max-width:1220px) {
