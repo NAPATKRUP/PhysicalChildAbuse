@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    cursor: url("image/cursor.png"), auto;
 }
 
 body {
@@ -11,6 +12,11 @@ body {
 
 a {
     font-size: 2.75vmin;
+    cursor: url("image/clicker.png"), auto;
+}
+
+.isbutton {
+    cursor: url("image/clicker.png"), auto;
 }
 
 .scrollbar {
@@ -429,7 +435,6 @@ ul li {
 }
 
 .testbox {       /*         txt box start     */
-    display: box;
     text-align:center;
     /*background: white;*/
     position: relative;
