@@ -485,7 +485,7 @@ ul li {
     transition: color 1s,background-color 1s;
 }
 
-@media (max-width:1400px) {
+@media (max-width:1220px) {
     a {
         font-size: 40px;
     }
