@@ -429,14 +429,14 @@ ul li {
 }
 
 .testbox {       /*         txt box start     */
+    color: black;
+    background-color: white;
     display: box;
     text-align:center;
-    /*background: white;*/
     position: relative;
-    top: 45vh;
+    top: 75vh;
     width: 50vh;
     height: 20vh;
-    color: white;
     font-size: 3.5vmax;
 }
 
@@ -445,23 +445,42 @@ ul li {
 }
 
 #choicebox1 {           /*choicebox 1*/
+    text-align: center;
+    font-size: 3.5vmax;
     display: none;
-    background-color: white;
+    color: white;
+    background-color: black;
     position: relative;
     top: 70vh;
     left: 15%;
     width: 20%;
     height: 10vh;
+    line-height: 10vh;
+}
+#choicebox1:hover {           /*choicebox 1*/
+    color: black;
+    background-color: white;
+    transition: color 1s,background-color 1s;
 }
 
 #choicebox2 {           /*choicebox 2*/
+    text-align: center;
+    font-size: 4vmax;
     display: none;
-    background-color: red;
+    color: white;
+    background-color: black;
     position: relative;
     top: 60vh;
     left: 65%;
     width: 20%;
     height: 10vh;
+    line-height: 10vh;
+}
+
+#choicebox2:hover {           /*choicebox 2*/
+    color: black;
+    background-color: white;
+    transition: color 1s,background-color 1s;
 }
 
 @media (max-width:1400px) {
