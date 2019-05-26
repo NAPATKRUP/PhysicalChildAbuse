@@ -51,9 +51,15 @@ a {
     animation: fadein 2s;
     padding-top: 6vh;
     padding-left: 0%;
-    background-image: url("./image/placeholder_a.png");
+    background: black;
+    background-image: url("./image/placeholder_black.png");
     background-position: center;
     background-size: cover;
+
+    -webkit-transition: background 300ms ease-in 200ms; /* property duration timing-function delay */
+    -moz-transition: background 300ms ease-in 200ms;
+    -o-transition: background 300ms ease-in 200ms;
+    transition: background 300ms ease-in 200ms;
 }
 
 #content {
@@ -415,13 +421,13 @@ ul li {
     height: 1vh;
     background-color: white;
     left: 50%;
-    
+
     transform: translatex(-50%);
     /* transform: translate(-50%, -50%);
     margin: 0 auto; */
 }
 
-.testbox {       /*         txt box start     */ 
+.testbox {       /*         txt box start     */
   display: box;
   text-align:center;
   /*background: white;*/
@@ -429,25 +435,29 @@ ul li {
   top: 45vh;
   width: 50vh;
   height: 20vh;
+  color: white;
 }
-.testbox:hover{ /*       onmouse txt box start     */ 
+.testbox:hover{ /*       onmouse txt box start     */
     color:red;
 }
 #choicebox1 {           /*choicebox 1*/
   background-color: white;
-  position: relative;
-  top: 50%;
+  position: absolute;
+  top: 75%;
   left: 15%;
   width: 0vh;
-  height: 20vh;
+  height: 10vh;
 }
 #choicebox2 {           /*choicebox 2*/
   background-color: red;
-  position: relative;
-  top: 0%;
-  left: 50%;
+
+  position: absolute;
+  top: 75%;
+  right: 5%;
+  left: 65%;
+
   width: 0vh;
-  height: 20vh;
+  height: 10vh;
 }
 @media (max-width:1400px) {
     a {
