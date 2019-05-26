@@ -442,6 +442,8 @@ ul li {
 
 .testbox:hover{ /*       onmouse txt box start     */
     color:red;
+    background-color: black;
+    transition: color 1s,background-color 1s;
 }
 
 #choicebox1 {           /*choicebox 1*/
