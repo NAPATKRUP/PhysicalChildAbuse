@@ -435,12 +435,9 @@ ul li {
 }
 
 .testbox {       /*         txt box start     */
-<<<<<<< HEAD
-=======
     color: black;
     background-color: white;
     display: box;
->>>>>>> 460f8a9be45342b8015bac219378cb6c85950054
     text-align:center;
     position: relative;
     top: 75vh;
