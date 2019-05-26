@@ -46,13 +46,13 @@ init();
 var clickgame = 0;  /* set game*/
 function clickchoiceone(){     /* choice one*/
 var scene = document.getElementById("page7");
-scene.style.backgroundImage = 'url("./image/placeholder_b.png")';
+scene.style.backgroundImage = 'url("./image/two.png")';
 clickgame++;
 }
 
 function clickchoicetwo(){ /* choice two*/
 var scene = document.getElementById("page7");
-scene.style.backgroundImage = 'url("./image/placeholder_c.png")';
+scene.style.backgroundImage = 'url("./image/three.png")';
 clickgame++;
 }
 
@@ -63,6 +63,7 @@ function move(){  /*  start game */
   var boxc2 = document.getElementById("choicebox2");
   var width = 100;
   var id = setInterval(frame, 75);
+  scene.style.backgroundImage = 'url("./image/one.png")';
   boxc1.style.width = "50vh";
   boxc2.style.width = width + '%';
   clickgame = 0;
@@ -70,7 +71,7 @@ function move(){  /*  start game */
   function frame() {
     if (width <= 0) {
       clearInterval(id);
-      scene.style.backgroundImage = 'url("./image/placeholder_d.png")';
+      scene.style.backgroundImage = 'url("./image/end.png")';
       boxc1.style.width = "0vh";
       boxc2.style.width = "0vh";
       document.getElementById("start").innerHTML = "Continue";
